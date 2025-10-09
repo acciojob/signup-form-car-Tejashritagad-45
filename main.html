@@ -1,73 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Example</title>
-    <link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Form starts here -->
-    <form method="post">
-        <div>
-            <label for="name">Name</label>
-            <input id="name" type="text" placeholder="Name" required>
-        </div>
+	<form method="post">
+		<div>
+		<label for="name">Name</label>
+		<input id="name" type="text" placeholder=Name required="Yes">
+			</div>
+		<div>
+		<label for ="email">Email</label>
+		<input id="email" type="email" placeholder="Email" required="Yes">
+			</div>
+		<div>
+		<label for="gender">Gender</label>
+		<input id="gender_m" type="radio" name="gender" required="Yes">male
+		<input id="gender_f" type="radio" name="gender" required="Yes">female
+			</div>
+		<div>
+		<label for="cars">Car Brands</label>
+		<select id="cars" required="Yes">
+			<option value="">--Please choose an option--</option>
+			<option>Mercedes</option>
+			<option>Thar</option>
+			<option>Lamborghini</option>
+			<option>BMW</option>			
+		</select>
+			</div>
+		<div>
+			<label for="age">Age</label>
+			<input id="age" type="number" placeholder="Age" required="Yes">
+		</div>
+		<div>
+			<label for="dob">DOB</label>
+			<input id="dob" type="date" required="Yes">
+		</div>
+		<div>
+			<label for="tel">Phone Number</label>
+			<input id="tel" type="tel" placeholder="xxx-xxx-xxxx" required="No">
+		</div>
+		<div>
+			<label for="password">Password</label>
+			<input id="password" type="password" placeholder="Password" required="Yes">
+		</div>
+		<div>
+			<label for="tos">I agree to the TOS</label>
+			<input id="tos" type="checkbox" required="Yes">
+		</div>
+		<div>
+			<button type="submit">submit</button>
+		</div>
+		
+	</form>
+	<!-- the entire body must be written by student -->
+    <script type="text/javascript" src="./script.js">
+</script>
 
-        <div>
-            <label for="email">Email</label>
-            <input id="email" type="email" placeholder="Email" required>
-        </div>
-
-        <div>
-            <label>Gender</label>
-            <input id="gender_m" name="gender" type="radio" value="male" required>
-            <label for="gender_m">Male</label>
-
-            <input id="gender_f" name="gender" type="radio" value="female" required>
-            <label for="gender_f">Female</label>
-        </div>
-
-        <div>
-            <label for="cars">Car Brand</label>
-            <select id="cars" required>
-                <option value="">--Please choose an option--</option>
-                <option>Volvo</option>
-                <option >Hyundai</option>
-            </select>
-        </div>
-
-        <div>
-            <label for="age">Age</label>
-            <input id="age" type="number" placeholder="Age" required>
-        </div>
-
-        <div>
-            <label for="dob">Date of Birth</label>
-            <input id="dob" type="date" required>
-        </div>
-
-        <div>
-            <label for="tel">Phone Number</label>
-            <input id="tel" type="tel" placeholder="xxx-xxx-xxxx">
-        </div>
-
-        <div>
-            <label for="password">Password</label>
-            <input id="password" type="password" placeholder="Password" required>
-        </div>
-
-        <div>
-            <input id="tos" type="checkbox" required>
-            <label for="tos">I agree to the TOS</label>
-        </div>
-
-        <button type="submit">Submit</button>
-    </form>
-
-    <script src="./script.js"></script>
 </body>
 
 </html>
